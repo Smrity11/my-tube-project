@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                redColor: '#FF1F3D',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="px-5 md:px-14 ">
+    <header class=" py-4 md:py-7 border-b-2">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div>
+                <img src="Logo.png" alt="">
+              </div>
+            </div>
+            <div class="navbar-center ml-6 ">
+                <button class="btn text-xs md:text-sm">Sort by view
+                </button>
+            </div>
+            <div class="navbar-end">
+              <button class="btn bg-redColor text-white">
+               Blog
+              </button>
+            </div>
+          </div>
+    </header>
+    <main>
+        <div id="btn-collection">
+            <button class="bg-slate-400 text-base text-white px-5 py-1">All</button>
+            <button>Music</button>
+            <button>Comedy</button>
+            <button>Drawing</button>
+        </div>
+    </main>
+    <script src="pherotube.js"></script>
+</body>
+</html>
