@@ -28,11 +28,11 @@
               </div>
             </div>
             <div class="navbar-center ml-6 ">
-                <button class="btn text-xs md:text-sm">Sort by view
+                <button onclick="shortByView()" class="btn text-xs md:text-sm">Sort by view
                 </button>
             </div>
             <div class="navbar-end">
-              <button class="btn bg-redColor text-white">
+              <button id="openNewPageButton" class="btn bg-redColor text-white">
                Blog
               </button>
             </div>
@@ -43,11 +43,20 @@
             
         </div>
 
-        <div class="grid">
-            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-between mx-auto ">
-           
+        <div class="grid justify-center">
+
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  justify-between lg:justify-center  mx-auto ">
+              
+          <div id="data-not-found" class="absolute grid  justify-center mx-auto items-center h-[300px] ">
+
             </div>
+            
+            
         </div>
+            
+        </div>
+        
+       
     </main>
     <script src="pherotube.js"></script>
 </body>
