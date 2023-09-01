@@ -3,16 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <style>
+        body >h1{
+            font-size:xx-large;
+            margin-bottom: 13px;
+        }
+        body>p{
+            font-size:15px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-<body>
-    <h1></h1>
-    <p></p>
+<body class="px-[50px] md:[100px] lg:px-[200px]">
 
-    <h1></h1>
-    <p></p>
+    <h1 >Discuss the scope of var, let, and const</h1>
+    
+    <p>A lot of shiny new features came out with ES2015 (ES6). And now, since it's 2020, it's assumed that a lot of JavaScript developers have become familiar with and have started using these features.</p>
+  
+    <p>While this assumption might be partially true, it's still possible that some of these features remain a mystery to some devs.
+    </p>
+    
+    <p>One of the features that came with ES6 is the addition of let and const, which can be used for variable declaration. The question is, what makes them different from good ol' var which we've been using? If you are still not clear about this, then this article is for you.</p>
+    
+    <p>In this article, we'll discuss var, let and const  with respect to their scope, use, and hoisting. As you read, take note of the differences between them that I'll point out.</p>
+    
+    <p>Here's an Interactive Scrim of Var, Let, and Const</p>
+    
+    <h1 class="text-2xl">Var</h1>
+    <p>Before the advent of ES6, var declarations ruled. There are issues associated with variables declared with var, though. That is why it was necessary for new ways to declare variables to emerge. First, let's get to understand var more before we discuss those issues.</p>
+    
+    <h1 class="text-2xl">Let</h1>
+    <p>let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var declarations. It also solves the problem with var that we just covered. Let's consider why this is so.
+    </p>
+   
+    <h1 class="text-2xl">let is block scoped
+    </h1>
+    <p>A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+    </p>
+   
+    <h1 class="text-2xl">Const</h1>
+    <p>Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.</p>
+   
+    <h1 class="text-2xl">const declarations are block scoped</h1>
+    <p class="mb-16">Like let declarations, const declarations can only be accessed within the block they were declared.</p>
 
-    <h1></h1>
-    <p></p>
+
+
+    <h1>Tell us the use cases of null and undefined
+</h1>
+    <p>In programming, especially in languages like JavaScript, null and undefined are two distinct concepts used to represent different states or scenarios involving the absence or lack of values. While they may seem similar, they serve unique purposes and are crucial for writing robust and predictable code. In this blog post, we'll explore the use cases of null and undefined without providing specific code examples.</p>
+
+<br>
+    <h1>Null</h1>
+    <h1 class="text-2xl">1. Intentional Absence</h1>
+    <p>null is often used to signify the intentional absence of any object value. It is a way to indicate that a variable or property exists but currently holds no meaningful data. This can be particularly useful in scenarios where you want to make it explicit that there is no value.</p>
+   
+    <h1 class="text-2xl">2. Database Records</h1>
+    <p>In databases, null is commonly employed to represent missing or unknown data for a specific field. When a database record doesn't have a value for a particular attribute, that attribute may be assigned a null value to indicate the absence of data.</p> 
+    <h1 class="text-2xl">3. Clearing References</h1>
+    <p>Another use case for null is to release memory and resources associated with a variable or object property. By assigning null, you explicitly state that the variable or property should no longer reference any object. This can help manage memory and prevent memory leaks.</p>
+    <h1 class="text-2xl">4. Function Return Values</h1>
+    <p>Functions often return null to indicate failure or the absence of a meaningful result when they cannot perform their intended operation. This allows the caller of the function to check for success or failure easily.</p>
+    
+    <h1> Undefined </h1>
+    <h1 class="text-2xl">1. Default Value</h1>
+    <p>undefined is typically the initial value of variables or object properties that haven't been explicitly assigned any value. It represents an unallocated or uninitialized state, indicating that the variable or property exists but has no defined value yet.</p>
+    <h1 class="text-2xl">2. Function Parameters</h1>
+    <p>When a function is called with fewer arguments than expected, the missing parameters are set to undefined. This behavior is useful for conditional checks within the function, allowing you to handle optional parameters gracefully.</p>
+    <h1 class="text-2xl">3. Missing Object Properties</h1>
+    <p>When you try to access an object property that doesn't exist, JavaScript returns undefined. This behavior is helpful when checking for the presence of specific properties within an object, preventing errors when accessing non-existent properties.</p>
+    <h1 class="text-2xl">4. Global Variables</h1>
+    <p>Variables declared globally but not initialized are also undefined. This can be important for identifying potential issues with variable declarations and ensuring that variables are properly initialized before use.</p>
+    <h1>Common Use Cases</h1>
+    <p>In summary, null and undefined have their unique use cases:
+        Null: Use null when you want to explicitly indicate the absence of a value, especially when a value should be set to nothing meaningful or when dealing with optional data.
+        Undefined: undefined is commonly used to represent the initial state of variables or properties. It is often encountered in situations where data may or may not be available, serving as a default uninitialized value.
+        Understanding when and how to use null and undefined correctly is essential for writing clean, maintainable, and predictable code. Properly handling these concepts can help prevent bugs and improve the overall quality of your software.</p>
+        <br>
+    <h1>What do you mean by REST API?</h1>
+    <p>Certainly! REST API, which stands for Representational State Transfer Application Programming Interface, is an architectural style for designing networked applications. It is not a specific technology or programming language but rather a set of constraints and principles for building web services that can be used to communicate between different software systems. Here's a breakdown of what REST API means:</p>
+    <p >1. Representational State Transfer (REST): REST is an architectural style that defines a set of constraints and guidelines for designing networked applications. It was introduced by Roy Fielding in his doctoral dissertation in 2000. REST emphasizes simplicity, scalability, and the use of standard HTTP methods for communication.</p>
+    <p>2. Application Programming Interface (API): An API is a set of rules and protocols that allow different software applications to communicate with each other. It defines the methods and data formats that applications can use to request and exchange information.</p>
+    <p>3. RESTful: When we say an API is "RESTful," it means that the API follows the principles of REST in its design. These principles include using standard HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources, representing resources as URLs (Uniform Resource Locators), and using stateless communication, where each request from a client to the server must contain all the information needed to understand and process the request.</p>
+    <p>In summary, a REST API is a set of rules and principles for designing web services that make use of standard HTTP methods and resource representations to enable communication between software systems in a simple and scalable manner. It has become a widely adopted approach for building web APIs due to its simplicity and compatibility with the HTTP protocol.</p>
 </body>
 </html>
